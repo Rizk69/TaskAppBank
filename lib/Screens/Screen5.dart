@@ -5,10 +5,7 @@ import 'package:untitled/widget/CardDetails.dart';
 import '../widget/AddCards.dart';
 
 class Screen5 extends StatelessWidget {
-  final String phoneNumber = '123-***-***778';
-
   const Screen5({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,35 +29,38 @@ class Screen5 extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 15.0),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     Image.asset(
                       'assets/Title.png',
                       height: 60,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     AddCards(
                       text: 'My cards ',
-                      icon: Icons.credit_card_rounded,
+                      icon: Icons.credit_card,
                       icon2: Icons.add,
                       onPressed: () {},
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 45,
                     ),
-                    CardDetails(),
-
-                    Container(height: 1,
-                        margin: EdgeInsets.symmetric(vertical: 50),
+                    const CardDetails(),
+                    Container(
+                      height: 1,
+                      margin: const EdgeInsets.symmetric(vertical: 50),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Constance.primaryColor,)
-                      ),
+                          border: Border.all(
+                        color: Constance.primaryColor,
+                      )),
                     ),
-                    CardDetails(),
-                    SizedBox(height: 50,)
+                    const CardDetails(),
+                    const SizedBox(
+                      height: 50,
+                    )
                   ],
                 ),
               )

@@ -40,14 +40,14 @@ class _Screen3State extends State<Screen4> {
               width: MediaQuery.of(context).size.width,
             ),
             Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Padding(
                 padding: const EdgeInsets.all(19),
                 child: Image.asset('assets/Title.png', fit: BoxFit.cover),
               ),
-              Text(
+              const Text(
                 'Card activation ',
                 style: TextStyle(
                     fontSize: 26,
@@ -63,7 +63,7 @@ class _Screen3State extends State<Screen4> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      Align(
+                      const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           'Password', // Replace with your actual text
@@ -77,7 +77,7 @@ class _Screen3State extends State<Screen4> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -92,12 +92,12 @@ class _Screen3State extends State<Screen4> {
                         child: Center(
                           child: TextFormField(
                             cursorColor: Colors.white,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                             ),
                             controller: _securityCodeController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: '',
                               labelStyle:
                                   TextStyle(color: Colors.white), // Label color
@@ -118,10 +118,10 @@ class _Screen3State extends State<Screen4> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Align(
+                      const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           'ConfirmPassword', // Replace with your actual text
@@ -135,7 +135,7 @@ class _Screen3State extends State<Screen4> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Container(
@@ -150,12 +150,12 @@ class _Screen3State extends State<Screen4> {
                         child: Center(
                           child: TextFormField(
                             cursorColor: Colors.white,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 18,
                             ),
                             controller: _securityCodeController,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: '',
                               labelStyle:
                                   TextStyle(color: Colors.white), // Label color
@@ -176,7 +176,7 @@ class _Screen3State extends State<Screen4> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 150,
                       ),
                       Buttoms(

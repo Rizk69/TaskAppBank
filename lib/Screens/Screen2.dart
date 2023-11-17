@@ -25,14 +25,14 @@ class Screen2 extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Align(
                     alignment: Alignment.centerRight,
                     child: Stack(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.notifications_sharp,
                           size: 35,
                           color: Colors.black,
@@ -46,7 +46,7 @@ class Screen2 extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(25)),
-                            child: Center(
+                            child: const Center(
                                 child: Text(
                               '1',
                               style: TextStyle(color: Colors.white),
@@ -55,18 +55,18 @@ class Screen2 extends StatelessWidget {
                         )
                       ],
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Image.asset(
                   'assets/Title.png',
                   height: 60,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 ChoiseCredit(text: 'Bank Card', icon: Icons.credit_card,icon2: Icons.navigate_next_outlined),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ChoiseCredit(

@@ -70,14 +70,14 @@ class _Screen3State extends State<Screen3> {
             width: MediaQuery.of(context).size.width,
           ),
           Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Padding(
               padding: const EdgeInsets.all(19),
               child: Image.asset('assets/Title.png', fit: BoxFit.cover),
             ),
-            Text(
+            const Text(
               'Card activation ',
               style: TextStyle(
                   fontSize: 26,
@@ -93,7 +93,7 @@ class _Screen3State extends State<Screen3> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Align(
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Card Number', // Replace with your actual text
@@ -107,7 +107,7 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
@@ -116,17 +116,17 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: Color(0xFFEEBB49), width: 1),
+                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
                           cursorColor: Colors.white,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 18,
                           ),
                           controller: _cardNumberController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             suffixIcon: Icon(
                               Icons.camera_alt_outlined,
                               color: Color(0xFFEEBB49),
@@ -150,8 +150,8 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 16),
-                    Align(
+                    const SizedBox(height: 16),
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Expiration date', // Replace with your actual text
@@ -165,7 +165,7 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
@@ -174,17 +174,17 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: Color(0xFFEEBB49), width: 1),
+                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
                           cursorColor: Colors.white,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 18,
                           ),
                           controller: _expirationDateController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: '',
                             labelStyle:
                                 TextStyle(color: Colors.white), // Label color
@@ -204,8 +204,8 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 16),
-                    Align(
+                    const SizedBox(height: 16),
+                    const Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'Security code', // Replace with your actual text
@@ -219,7 +219,7 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Container(
@@ -228,17 +228,17 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: Color(0xFFEEBB49), width: 1),
+                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
                           cursorColor: Colors.white,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 18,
                           ),
                           controller: _securityCodeController,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             labelText: '',
                             labelStyle:
                                 TextStyle(color: Colors.white), // Label color
@@ -259,7 +259,7 @@ class _Screen3State extends State<Screen3> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 50),
+                    const SizedBox(height: 50),
                     Buttoms(onPressed: (){},text: 'Activate', color: Color(0xFFEEBB49))
                   ],
                 ),

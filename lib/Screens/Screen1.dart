@@ -19,10 +19,10 @@ class Home extends StatelessWidget {
       CardSelect(imagePath: 'assets/card.png', title: 'Meta'),
     ];
     List color = [
-Color(0XFFF1EDA6),
-Color(0XFFFAC4C4),
-Color(0XFFAAE6B0),
-Color(0XFFA6F1ED),
+const Color(0XFFF1EDA6),
+const Color(0XFFFAC4C4),
+const Color(0XFFAAE6B0),
+const Color(0XFFA6F1ED),
     ];
     final cardSelectionCubit = context.read<CardSelectionCubit>();
     final colorSelectionCubit = context.read<ColorSelectionCubit>();
@@ -41,7 +41,7 @@ Color(0XFFA6F1ED),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Image.asset('assets/Title.png', fit: BoxFit.cover),
@@ -57,10 +57,10 @@ Color(0XFFA6F1ED),
                   );
                 }),
               ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
-                  Text(
+                  const Text(
                     'Select your colour',
                     style: TextStyle(
                         fontSize: 26,
@@ -69,10 +69,10 @@ Color(0XFFA6F1ED),
                         fontWeight: FontWeight.w700),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
-                  TransformImage(),
+                  const TransformImage(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: List.generate(color.length, (index) {
@@ -85,7 +85,7 @@ Color(0XFFA6F1ED),
                       );
                     }),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Padding(
@@ -96,7 +96,7 @@ Color(0XFFA6F1ED),
                       text: 'Activate',
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Padding(
