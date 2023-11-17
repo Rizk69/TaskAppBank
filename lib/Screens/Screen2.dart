@@ -65,12 +65,12 @@ class Screen2 extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
-                ChoiseCredit(text: 'Bank Card', icon: Icons.credit_card),
+                ChoiseCredit(text: 'Bank Card', icon: Icons.credit_card,icon2: Icons.navigate_next_outlined),
                 SizedBox(
                   height: 20,
                 ),
                 ChoiseCredit(
-                    text: 'credit card', icon: Icons.monetization_on_rounded),
+                    text: 'credit card', icon: Icons.monetization_on_rounded,icon2: Icons.navigate_next_outlined),
               ],
             ),
           )

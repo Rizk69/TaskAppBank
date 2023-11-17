@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class ChoiseCredit extends StatelessWidget {
   String text;
   IconData icon;
-   ChoiseCredit({required this.text,required this.icon});
+  IconData icon2;
+   ChoiseCredit({required this.text,required this.icon,required this.icon2});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,7 @@ class ChoiseCredit extends StatelessWidget {
           ),
         ),
         Spacer(),
-        IconButton(onPressed: (){}, icon: Icon(Icons.navigate_next_outlined,size: 35,color: Colors.white,))
+        IconButton(onPressed: (){}, icon: Icon(icon2,size: 35,color: Colors.white,))
       ],
     );
   }

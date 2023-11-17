@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/helper/constens.dart';
 import 'package:untitled/widget/ElivetedButtom.dart';
 
 class Screen4 extends StatefulWidget {
@@ -86,7 +87,7 @@ class _Screen3State extends State<Screen4> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           border:
-                              Border.all(color: Color(0xFFEEBB49), width: 1),
+                              Border.all(color: Constance.primaryColor, width: 1),
                         ),
                         child: Center(
                           child: TextFormField(
@@ -144,7 +145,7 @@ class _Screen3State extends State<Screen4> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           border:
-                              Border.all(color: Color(0xFFEEBB49), width: 1),
+                              Border.all(color: Constance.primaryColor, width: 1),
                         ),
                         child: Center(
                           child: TextFormField(
@@ -181,7 +182,7 @@ class _Screen3State extends State<Screen4> {
                       Buttoms(
                           onPressed: () {},
                           text: 'Activate',
-                          color: Color(0xFFEEBB49))
+                          color: Constance.primaryColor)
                     ],
                   ),
                 ),
