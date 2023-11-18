@@ -10,7 +10,6 @@ class Screen4 extends StatefulWidget {
 class _Screen3State extends State<Screen4> {
   final TextEditingController _securityCodeController = TextEditingController();
 
-  final FocusNode _securityCodeFocus = FocusNode();
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 

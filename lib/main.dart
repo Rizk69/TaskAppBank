@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:untitled/Screens/NFC/Nfc.dart';
+import 'package:untitled/Screens/NFC/Password.dart';
 import 'package:untitled/Screens/Screen%203.dart';
 import 'package:untitled/Screens/Screen1.dart';
 import 'package:untitled/Screens/Screen2.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           BlocProvider<CardSelectionCubit>(create: (context) => CardSelectionCubit()),
           BlocProvider<ColorSelectionCubit>(create: (context) => ColorSelectionCubit()),
         ],
-        child: Screen5(),
+        child: Nfc(),
       ),
     );
   }

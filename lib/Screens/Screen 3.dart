@@ -116,7 +116,8 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
+                        border: Border.all(
+                            color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
@@ -174,7 +175,8 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
+                        border: Border.all(
+                            color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
@@ -228,7 +230,8 @@ class _Screen3State extends State<Screen3> {
                           vertical: 10, horizontal: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: const Color(0xFFEEBB49), width: 1),
+                        border: Border.all(
+                            color: const Color(0xFFEEBB49), width: 1),
                       ),
                       child: Center(
                         child: TextFormField(
@@ -260,7 +263,10 @@ class _Screen3State extends State<Screen3> {
                       ),
                     ),
                     const SizedBox(height: 50),
-                    Buttoms(onPressed: (){},text: 'Activate', color: Color(0xFFEEBB49))
+                    Buttoms(
+                        onPressed: () {},
+                        text: 'Activate',
+                        color: Color(0xFFEEBB49))
                   ],
                 ),
               ),
